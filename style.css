@@ -1,0 +1,331 @@
+body {
+  background: linear-gradient(90deg, #ff0000, #990000);
+  color: white;
+  font-family: "Open sans", sans-serif;
+  margin: 0;
+  overflow: overlay;
+}
+
+/*Scroll Bar*/
+*::-webkit-scrollbar {
+  width: 10px;
+  background: transparent;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: white;
+  border-radius: 20px;
+  border: 3.5px solid black;
+}
+
+*::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/*Scroll Bar*/
+
+/*Inicio Parte do Cabeçalho*/
+
+nav {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  border: 5px solid black;
+  height: 15vh;
+}
+
+.mobile-menu {
+  cursor: pointer;
+  display: none;
+}
+
+.mobile-menu div {
+  border-radius: 15px;
+  width: 36px;
+  height: 5px;
+  background: #000;
+  margin: 6px;
+}
+
+.hiway {
+  width: 190px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+a {
+  font-family: "Opens sans", sans-serif;
+  font-weight: 700;
+}
+
+li {
+  display: inline-block;
+  color: white;
+  margin: 10px;
+  border: 5px solid black;
+  padding: 10px;
+  border-radius: 30px;
+  font-family: "Opens sans", sans-serif;
+  font-weight: 900;
+}
+
+li:hover {
+  background-color: white;
+  color: black;
+  transition: 0.4s all;
+}
+
+li:not(:hover) {
+  background-color: #fa0101;
+  color: white;
+  transition: 0.4s all;
+}
+
+button {
+  background: none;
+  border: none;
+  outline: none;
+  box-shadow: none;
+}
+/*Fim Parte do Cabeçalho*/
+
+/*Inicio Parte do Conteúdo do About*/
+
+/*About Lateral*/
+.welcome {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  margin-left: 20px;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+section {
+  margin: 0;
+}
+
+.feed-back {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 5px solid black;
+  background-color: white;
+  width: auto;
+  margin-top: 20px;
+}
+
+.feed {
+  font-size: 28px;
+  text-align: start;
+  color: black;
+  font-family: "Opens sans", sans-serif;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+/*Fim About Lateral*/
+
+/*Inicio Informações Basicas About*/
+
+article {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: white;
+  border: 5px solid #000;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+aside {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-items: center;
+  letter-spacing: -2.2px;
+}
+
+.aside-about {
+  display: flex;
+  flex-direction: column;
+}
+
+h1 {
+  color: #000;
+  font-size: 50px;
+  font-family: "Opens sans", sans-serif;
+  font-weight: 600;
+  margin: 15px;
+}
+
+.description {
+  color: black;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  text-align: justify;
+  margin-top: 0;
+  letter-spacing: -1px;
+  font-size: 26px;
+  width: 670px;
+}
+/*Fim Informações Basicas About*/
+
+/*Inicio Fundadores e Conceitos do Projeto*/
+.info-fundation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  padding-left: 15px;
+  border: 5px solid black;
+  background-color: white;
+  height: 80px;
+  text-align: start;
+  width: auto;
+}
+
+.fund-h1 {
+  color: #000;
+  font-size: 50px;
+  font-family: "Opens sans", sans-serif;
+  font-weight: 600;
+  letter-spacing: -2px;
+}
+
+/*Inicio Transições e Posicionamento das imagens e descrições de cada Sócio*/
+.fundators {
+  width: 260px;
+  height: 260px;
+  border-radius: 50%;
+  border: 5px solid black;
+  margin-top: 20px;
+}
+
+.name {
+  text-align: center;
+  align-items: center;
+  display: flex;
+}
+
+.name h4 {
+  background-color: white;
+  font-size: 27px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  padding: 8px;
+  border: 5px solid black;
+  border-radius: 18px;
+  color: black;
+  letter-spacing: -0.5px;
+}
+
+.image-and-name {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.infoFundators {
+  display: none;
+  text-align: center;
+  opacity: 0;
+}
+
+.infoFundators p {
+  width: auto;
+  word-break: keep-all;
+  flex-direction: row;
+  align-items: center;
+  line-height: 40px;
+  margin: 50px;
+  font-size: 30px;
+  color: black;
+  font-weight: 700;
+  padding: 8px;
+  border: 5px solid black;
+  border-radius: 10px;
+  background-color: #fffffffb;
+}
+
+.infoFundators.show {
+  display: flex;
+  text-align: justify;
+  opacity: 1;
+}
+
+.profile-fundators {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  transition: all 1.8s ease;
+}
+/*Final Fundadores e Conceitos do Projeto*/
+
+/*Inicio do Efeito de Acordeão para as dúvidas frequentes*/
+.duv-btn {
+  font-size: 25px;
+  font-family: "Poppins";
+  font-weight: 700;
+  letter-spacing: -1px;
+  margin: 0;
+}
+
+.arrow-duv {
+  width: 50px;
+  transition: transform 0.5s ease-out;
+}
+
+.accordion-item.active .arrow-duv {
+  transform: rotate(180deg);
+}
+
+.accordion {
+  display: flex;
+  flex-direction: column;
+}
+
+.accordion-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #fff;
+  width: 98%;
+  border: 5px solid #000;
+  border-radius: 10px;
+  border-top-left-radius: 40px;
+  border-bottom-left-radius: 40px;
+  margin-left: 15px;
+  padding-left: 15px;
+  margin: 20px;
+}
+
+.accordion-content {
+  display: none;
+  overflow: hidden;
+  transition: max-height 0.4s ease-out, opacity 0.3s ease-out;
+  margin-left: 25px;
+  margin-bottom: 10px;
+  max-height: 0;
+  opacity: 0;
+  width: 90%;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+}
+
+.accordion-item.active .accordion-content {
+  max-height: 500px;
+  opacity: 1;
+  display: block;
+}
+
+.accordion-content p {
+  font-size: 24px;
+}
+
+/*Parte de responsividade*/

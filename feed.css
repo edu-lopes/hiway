@@ -1,0 +1,241 @@
+body {
+  background: linear-gradient(90deg, #ff0000, #990000);
+  color: white;
+  font-family: "Open sans", sans-serif;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+/*Scroll Bar*/
+*::-webkit-scrollbar {
+  width: 10px;
+  background: transparent;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: white;
+  border-radius: 20px;
+  border: 3.5px solid black;
+}
+/*Scroll Bar*/
+
+/*Inicio Parte do Cabeçalho*/
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  align-items: center;
+  background-color: white;
+  border: 5px solid black;
+  height: 120px;
+  position: relative;
+}
+
+.hiway {
+  width: 190px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.aside-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+a {
+  font-family: "Opens sans", sans-serif;
+  font-weight: 700;
+}
+
+.welcome {
+  font-weight: 700;
+  font-family: "Opens sans", sans-serif;
+  font-size: 35px;
+  color: black;
+}
+
+.icon-perfil-btn {
+  background: none;
+  border: none;
+  outline: none;
+  box-shadow: none;
+}
+
+.icon-perfil {
+  width: 70px;
+  margin-left: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  align-content: space-between;
+  flex-direction: row;
+}
+
+li {
+  display: inline-block;
+  color: white;
+  margin: 10px;
+  border: 5px solid black;
+  padding: 10px;
+  border-radius: 30px;
+  font-family: "Opens sans", sans-serif;
+  font-weight: 900;
+}
+
+li:hover {
+  background-color: white;
+  color: black;
+  transition: 0.4s all;
+}
+
+li:not(:hover) {
+  background-color: #fa0101;
+  color: white;
+  transition: 0.4s all;
+}
+/*Fim Cabeçalho*/
+
+/*Feed Lateral*/
+section {
+  margin-left: 10px;
+  margin-bottom: 60px;
+}
+
+.feed {
+  margin-top: 15px;
+  border: 5px solid black;
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
+  padding: 10px ;
+  background-color: white;
+  text-align: start;
+  width: auto;
+  color: black;
+  font-family: "Opens sans", sans-serif;
+  font-weight: 900;
+  padding-left: 15px;
+}
+/*Fim Feed Lateral*/
+
+/* Início Feed Noticias */
+.aside-feed {
+  display: flex;
+  flex-direction: row-reverse; /* Mudança para coluna */
+  align-items: center;
+  justify-content: space-evenly;
+  text-align: center;
+  margin-bottom: 55px;
+}
+
+#images-feed, #current-image {
+  width: 600px;
+  height: 500px;
+  object-fit: cover;
+  border: 5px solid black;
+  border-radius: 20px;
+}
+
+#images-feed img, #current-image img {
+  width: 100%;
+  overflow: hidden;
+}
+
+.news {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  line-height: 1.2;
+  max-width: 700px;
+}
+
+.h1-feed {
+  font-size: 80px;
+  letter-spacing: -2px;
+  margin: 0;
+  text-align: center;
+  line-height: 80%;
+}
+
+#subtitle {
+  color: black;
+  font-size: 36px;
+  margin: 20px;
+}
+
+#descript-feed {
+  text-align: justify;
+  width: 700px;
+}
+
+.next-button {
+  background: none;
+  border: none;
+  outline: none;
+  box-shadow: none;
+}
+
+#next-button {
+  height: 50px;
+  border: 4px solid;
+  border-radius: 50%;
+  margin-top: 25px;
+  background-color: white;
+}
+
+.news__content-img--in {
+  animation-name: news__content-img--in;
+  animation-duration: 2s;
+}
+
+@keyframes news__content-img--in {
+  from {
+    transform: translateX(-110%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0%);
+    opacity: 1;
+  }
+}
+
+.news__content-img--out {
+  animation-name: news__content-img--out;
+  animation-duration: 2s;
+}
+
+@keyframes news__content-img--out {
+  from {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  to {
+    transform: translateX(110%);
+    opacity: 0;
+  }
+}
+
+.paragraph-animation {
+  animation-name: paragraph-animation;
+  animation-duration: 2s;
+}
+
+@keyframes paragraph-animation {
+  from {
+    opacity: 0;
+    transform: scale(0);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.news__content-img img:not(:hover) {
+  transform: scale(1);
+}
+/* Fim Feed Noticias */

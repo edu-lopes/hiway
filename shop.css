@@ -1,0 +1,296 @@
+body {
+  max-width: 100%;
+  background: linear-gradient(90deg, #121e3e, #990000);
+  background-size: 200% 200%;
+  animation: gradientBackground 3s infinite alternate;
+  margin: 0;
+  padding: 0;
+}
+
+@keyframes gradientBackground {
+  0% {
+    background-position: 0% 150%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#plans-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+/*Scroll Bar*/
+*::-webkit-scrollbar {
+  width: 10px;
+}
+
+*::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: white;
+  border-radius: 20px;
+  border: 3.5px solid black;
+}
+/*Scroll Bar*/
+
+/*Inicio Parte do Cabeçalho*/
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  align-items: center;
+  background-color: white;
+  border: 5px solid black;
+  height: 120px;
+  position: relative;
+}
+
+.hiway {
+  width: 190px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+a {
+  font-family: "Opens sans", sans-serif;
+  font-weight: 700;
+}
+
+.welcome {
+  font-weight: 700;
+  font-family: "Opens sans", sans-serif;
+  font-size: 35px;
+  color: black;
+  letter-spacing: 0px;
+  margin: 0;
+}
+
+.icon-perfil {
+  width: 70px;
+  margin-left: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  align-content: space-between;
+  flex-direction: row;
+}
+
+li {
+  display: inline-block;
+  color: white;
+  margin: 10px;
+  border: 5px solid black;
+  padding: 10px;
+  border-radius: 30px;
+  font-family: "Opens sans", sans-serif;
+  font-weight: 900;
+}
+
+li:hover {
+  background-color: white;
+  color: black;
+  transition: 0.4s all;
+}
+
+li:not(:hover) {
+  background-color: #fa0101;
+  color: white;
+  transition: 0.4s all;
+}
+/*Fim Parte do Cabeçalho*/
+
+/*Inicio Parte do Conteúdo do Shop*/
+
+/*Shop Lateral*/
+.feed {
+  color: #000;
+  font-family: "Opens sans", sans-serif;
+  font-weight: 900;
+  padding-left: 15px;
+}
+
+.nav {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  letter-spacing: -2.2px;
+}
+
+.cart-add {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 15px;
+  border: 5px solid black;
+  border-radius: 30px;
+  background-color: #fff;
+  text-align: start;
+  height: 50px;
+  width: 95%;
+}
+.cart-add img {
+  width: 50px;
+  transform: scaleX(-1);
+  margin-right: 15px;
+}
+/*Fim Shop Lateral*/
+
+/*Tipos da Compra -> Mensal ou Anual*/
+.buy-plan {  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #fff;
+  border: 6px solid #000;
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
+  margin: 50px;
+}
+
+.top-plan {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.title-plan {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.discount-month {
+  width: 80px;
+  margin: 0;
+}
+
+.month-h4 {
+  font-family: "Poppins", sans-serif;
+  font-size: 24px;
+  text-transform: uppercase;
+  margin: -15px;
+}
+
+.prix {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.h3-prix {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 15px;
+}
+
+.h2-prix {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 25px;
+}
+
+.h4-prix {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+}
+
+#topicals {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  margin-top: 5%;
+}
+
+.topicals-check {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-left: 5%;
+  max-width: 90%;
+  gap: 10px;
+  height: 8vh;
+}
+
+.benef {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  word-break: keep-all;
+}
+
+button {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  outline: none;
+  margin-top: 5%;
+}
+
+.assinature {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(90deg, #ee0000, #580000);
+  background-size: 200% 200%;
+  animation: gradient-animation 3s linear infinite;
+  border: 5px solid #000;
+  border-radius: 30px;
+} 
+
+.assinature:hover {
+  transition: all ease-in-out 0.5s;
+  cursor: pointer;
+  background: linear-gradient(90deg, #003b79, #000117);
+  background-size: 200% 200%;
+  animation: gradient-animation 2.5s linear infinite;
+  width: 15vw;
+  height: 7vh;
+}
+
+.assinature:not(:hover) {
+  transition: all ease-in-out 0.5s;
+  width: 15vw;
+  height: 7vh;
+}
+
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+span {
+  color: #f60000;
+}
+
+.span-benef {
+  color: #ff0000;
+  font-weight: 700;
+}
